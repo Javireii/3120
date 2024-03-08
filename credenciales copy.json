@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "bot-rh-shades",
+    "private_key_id": "17de94061028a687a96ea07f4a53464b3496a78d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQC1cnph3aMkI00L\ndlwo/gN30ZVeObINtj5zITrY0kjZEIaGm2VyHWnJ8NrHTdZ5gncMHCai2jTvQkyd\nyH7fJ6oAmjr1LNTOOwseaqm15rXi+mryxQTN/pMYmCKR+NMmMpGDrya8hat0Hse/\nNvK5c15o9Q7a/FuuwxcK6MVdVIQAQhIcpHNBDJxbdby3QAlr9rSKKeDOlJNziN0B\nq7wzscTo63mVolWFmlSjnsbBPPboCGrJh0kWVRbf3IKLJeczHbuHIgo6w60CS9ht\nwyThkjlxh+Yxxt263XDDgUr5wMvIjTab6V/ZBuzYWGe7CA5iX/YFOGgkLXeyFQkf\nyjHoKenLAgMBAAECggEAO/6hq5lSt4C6mVcl6uHueKBCYLj4ACOpq3ypzgZd0vPt\nXzWjieNi1sQ+Opcomt3CCi2GsuMujIvh9GvWU2f0hKV6aBXOOXB5YTHIcp5Ztrax\nRRtS1t/deEzZZWWeP2uKBL4Vs1EJW2hQCJAdGqekaFTa+BpoIDVeeZt0osLusHyZ\nKMOHrm3lBAMdLCBgsGCgxYG0yQ3UIY5sKpumM8eJ1cxeiFP7ADgQY4Id7w2p5DLn\nInXCVpbI4dKGoboIQIMmzrl6Z9D2wytY9+7dW5rRPvWaWfHmDdrXmK8FhedPff64\nH+BlNgjcsLG9fadw/hrx/zHtaYFcnChODe4KSxqUvQKBgQDqDBJB/IDU5vFBS2oV\nsxyxA0tTR/6letSKjUSnLkCtLZL4PGiz7R7p8EW8yR+jBFigwNNG0XImpXbVzEm1\nps+5yNLEgszTBhCHBAjYufhHEIDcF1U9mjdZ5Yc/kg6YY8n800K4v/ZvwrSgPR7m\nOZS/qYAV/1PyYYCKgHyYuiaA5wKBgQDGd2D2/xjzAgo06dRrHZoqA8V8f7hxB5nb\nQLCUCF5m3+m9ntOCLiafJzZD/aj2RzV6ALTZm46opxdrovEs2HtDCLc7ix1UCFDj\ncktzYIMwbxBqfenWVRRv49XDBcXs2XybaYgYXq01VqJpns0h+WjCr/QdiCRLi3wg\nRjCxcxcffQKBgBOMgpHkZ1ZhG9GaXPgHB+R5I/eG0ew8gDg6aHuWT2ynm9kEIrK0\noZpkqU6FdhEFselrcbo+kExOEcj10UpM7pjT/1bOnhEaNpMwcRS5I9W7uSepA0Or\n9+eYVl2m83UjEKH/e1k3H3xiRPgFYulT8eq4W6x6sSZToorvBHk1QzYNAn8K2nxz\nBYBXycTFIAR91yCXK52hMVrk04WWd/MwJUUEWzptJEJs3BlAmuRc04Jp9Xr3MRKy\n0875ainduQt3aF9VSyS6HOF9tva1eYqmxKBoBargKAKhtgVoGQ2XnLk2Oq6V0S+g\nJY1TXWmEXSrasMkJ3JV9B/T0LKydFzmSerjJAoGBAIDIt+S/holxpnMskYOmik6j\n1ON9utUaTdG2S7cbKrMU5PaukLgBus1/yEp8ulxhWltVyElfiXpzbxjv1i5fv0QQ\nLKGn8AWKv5tFJrUC39LiXZlOiz4oK5/gFK6UvE2KXc67fKmTlUwPwGK6PBWhCRp/\n964URMuE8q4yFbLCHSq7\n-----END PRIVATE KEY-----\n",
+    "client_email": "rh-shades@bot-rh-shades.iam.gserviceaccount.com",
+    "client_id": "112423918849967975387",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rh-shades%40bot-rh-shades.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
