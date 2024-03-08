@@ -121,13 +121,15 @@ const flowformulario = addKeyword(["2", "aplicar"])
          * ?DESCARGA DE IMAGENES DEL USUARIO EN EL CHAT
          *
          */
+
         try {
           const buffer = await downloadMediaMessage(ctx, "buffer");
           console.log("Descargo imagen de chat usuario");
-          await writeFile(`./app/assets/${id_bot.id}.jpg`, buffer);
-          return await flowDynamic([
-            { body: "esta es la imagen", media: `./assets/${id_bot.id}.jpg` },
-          ]);
+          // await writeFile(`./assets/${id_bot.id}.jpg`, buffer);
+          await writeFile(
+            path.join(__dirname, "assets", `${id_bot.id}.jpg`),
+            buffer
+          );
         } catch (err) {
           console.log(err);
         }
@@ -164,12 +166,15 @@ const flowformulario = addKeyword(["2", "aplicar"])
               {
                 resource: fileMetaData,
                 media: {
-                  body: fs.createReadStream(`./app/assets/${id_bot.id}.jpg`),
+                  body: fs.createReadStream(
+                    path.join(__dirname, "assets", `${id_bot.id}.jpg`)
+                  ),
                 },
                 fields: "id",
               },
               function (error, file) {
                 if (error) {
+                  console.error("No se subio el archivo");
                   return rejected(error);
                 }
                 resolve(file);
@@ -182,13 +187,16 @@ const flowformulario = addKeyword(["2", "aplicar"])
             await uploadFile(authClient);
 
             // Delete the file in the "assets" directory after upload
-            fs.unlink(`./app/assets/${id_bot.id}.jpg`, (err) => {
-              if (err) {
-                console.error("Error deleting file:", err);
-              } else {
-                console.log("File deleted successfully");
+            fs.unlink(
+              path.join(__dirname, "assets", `${id_bot.id}.jpg`),
+              (err) => {
+                if (err) {
+                  console.error("Error deleting file:", err);
+                } else {
+                  console.log("File deleted successfully");
+                }
               }
-            });
+            );
           })
           .catch((error) => {
             console.error("Error uploading to Google Drive:", error);
