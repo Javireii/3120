@@ -125,7 +125,7 @@ const flowformulario = addKeyword(["2", "aplicar"])
           const buffer = await downloadMediaMessage(ctx, "buffer");
           console.log("Descargo imagen de chat usuario");
           await writeFile(`./assets/${id_bot.id}.jpg`, buffer);
-          //return await flowDynamic([{ media: `./assets/${id_bot.id}.jpg` }]);
+          return await flowDynamic([{ media: `./assets/${id_bot.id}.jpg` }]);
         } catch (err) {
           console.log(err);
         }
