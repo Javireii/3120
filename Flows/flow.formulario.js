@@ -124,8 +124,10 @@ const flowformulario = addKeyword(["2", "aplicar"])
         try {
           const buffer = await downloadMediaMessage(ctx, "buffer");
           console.log("Descargo imagen de chat usuario");
-          await writeFile(`./assets/${id_bot.id}.jpg`, buffer);
-          return await flowDynamic([{ media: `./assets/${id_bot.id}.jpg` }]);
+          await writeFile(`./app/assets/${id_bot.id}.jpg`, buffer);
+          return await flowDynamic([
+            { body: "esta es la imagen", media: `./assets/${id_bot.id}.jpg` },
+          ]);
         } catch (err) {
           console.log(err);
         }
@@ -162,7 +164,7 @@ const flowformulario = addKeyword(["2", "aplicar"])
               {
                 resource: fileMetaData,
                 media: {
-                  body: fs.createReadStream(`./assets/${id_bot.id}.jpg`),
+                  body: fs.createReadStream(`./app/assets/${id_bot.id}.jpg`),
                 },
                 fields: "id",
               },
@@ -180,7 +182,7 @@ const flowformulario = addKeyword(["2", "aplicar"])
             await uploadFile(authClient);
 
             // Delete the file in the "assets" directory after upload
-            fs.unlink(`./assets/${id_bot.id}.jpg`, (err) => {
+            fs.unlink(`./app/assets/${id_bot.id}.jpg`, (err) => {
               if (err) {
                 console.error("Error deleting file:", err);
               } else {
