@@ -123,7 +123,7 @@ const flowformulario = addKeyword(["2", "aplicar"])
          */
         try {
           const buffer = await downloadMediaMessage(ctx, "buffer");
-          console.log("envio imagen a drive");
+          console.log("Descargo imagen de chat usuario");
           await writeFile(`./assets/${id_bot.id}.jpg`, buffer);
           //return await flowDynamic([{ media: `./assets/${id_bot.id}.jpg` }]);
         } catch (err) {
@@ -148,6 +148,8 @@ const flowformulario = addKeyword(["2", "aplicar"])
 
         // A Function that will upload the desired file to google drive folder
         async function uploadFile(authClient) {
+          console.log("Iniciamos subida de archivos");
+
           return new Promise((resolve, rejected) => {
             const drive = google.drive({ version: "v3", auth: authClient });
             var fileMetaData = {
