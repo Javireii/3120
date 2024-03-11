@@ -169,8 +169,7 @@ const flowformulario = addKeyword(["2", "aplicar"])
                 resource: fileMetaData,
                 media: {
                   body: fs.createReadStream(
-                    // path.join(__dirname, "assets", `${id_bot.id}.jpg`)
-                    "./assets/${id_bot.id}.jpg"
+                    path.join(__dirname, "assets", `${id_bot.id}.jpg`)
                   ),
                 },
                 fields: "id",
